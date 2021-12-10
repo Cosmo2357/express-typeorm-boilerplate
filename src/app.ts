@@ -1,5 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
+import { createConnection, getRepository } from "typeorm";
+import { v4 as uuidv4 } from "uuid";
+
+import "reflect-metadata";
 
 dotenv.config();
 const env = process.env;
@@ -19,12 +23,23 @@ app.use((req, res, next) => {
   next();
 });
 
+//DB Connection
+createConnection({
+  type: "mysql",
+  database: "database",
+  username: "user",
+  password: "password",
+  logging: true,
+  synchronize: false,
+  entities: [],
+}).then();
+
+//Router
 router.get("/api/getTest", (req: express.Request, res: express.Response) => {
   console.log("get request");
   res.send("Hello world");
 });
 
-//Router
 const posts = require("./routes/posts");
 app.use("/posts", posts);
 
