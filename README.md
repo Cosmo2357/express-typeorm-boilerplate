@@ -5,6 +5,7 @@
 ## Simple Boilerplate of Express + ESLint + Prettier + TypeORM
 
 - Express
+- TypeORM
 - ESLint
 - Prettier
 - dotenv
