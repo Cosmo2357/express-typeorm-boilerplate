@@ -13,6 +13,6 @@
 ### Git Clone
 
 ```bash
-git clone https://github.com/Cosmo2357/express-boiler-plate.git
+git clone https://github.com/Cosmo2357/express-typeorm-boilerplate.git
 
 ```
