@@ -2,7 +2,7 @@
 <strong>Announcement 📣</strong><br/>nothing much😅<br/>
 </p>
 
-## Simple Boilerplate of TypeScript Express Server + ESLint + Prettier
+## Simple Boilerplate of Express + ESLint + Prettier + TypeORM
 
 - Express
 - ESLint
